@@ -11,6 +11,9 @@ window.addEventListener('load', async () => {
   // await loadPosts()
 })
 
+if ('serviceWorker' in navigator) {
+  console.log(1);
+}
 
 // async function loadPosts() {
 //   const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=11')
