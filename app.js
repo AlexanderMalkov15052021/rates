@@ -1,3 +1,5 @@
+permissions-policy: interest-cohort=()
+
 window.addEventListener('load', async () => {
   if ('serviceWorker' in navigator) {
     try {
