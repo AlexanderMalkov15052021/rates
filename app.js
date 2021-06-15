@@ -7,10 +7,6 @@ window.addEventListener('load', async () => {
       console.log('Service worker register fail')
     }
   }
-
-  if ('serviceWorker' in navigator) {
-    console.log(1);
-  }
   
   // await loadPosts()
 })
