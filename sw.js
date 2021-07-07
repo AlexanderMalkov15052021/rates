@@ -1,11 +1,10 @@
-const staticCacheName = 's-app-v3'
-const dynamicCacheName = 'd-app-v3'
+const staticCacheName = 's-app-v1'
+const dynamicCacheName = 'd-app-v1'
 
 const assetUrls = [
   'index.html',
-  'sw.js',
-  '/js/app.js',
-  '/css/styles.css',
+  'app.js',
+  'index.css',
   'offline.html'
 ]
 

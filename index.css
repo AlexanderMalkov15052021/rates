@@ -1,54 +1,225 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-size: 14px;
-    font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  font-size: 16px;
+}
+span {
+  float: left;
+  border: 2px dotted black;
+  margin-bottom: 3px;
+  padding: 0;
+  width: 155px;
+  height: 25px;
+  text-align: left;
+  position: relative;
 }
 
-nav {
-    height: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #3a1a86;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 20px 3px 9px rgb(0 0 0 / 30%);
+label {
+  float: left;
+  width: 75px;
+  height: 20px;
+  text-align: left;
+  margin-left: 15px;
+  opacity: 0;
 }
 
-header {
-    height: 100px;
-    background: #5d30bf;
-    margin-top: 30px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+table {
+  height: auto;
+  margin: 0 auto;
 }
 
+caption {
+  margin-top: 10px;
+  text-align: right;
+}
+
+tr {
+  text-align: left;
+}
+
+td {
+  width: auto;
+  height: 20px;
+  border: 2px dotted black;
+}
+
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+span:nth-child(11), span:nth-child(12), span:nth-child(13), span:nth-child(15), span:nth-child(16) {
+  background: transparent;
+  border: 2px dotted transparent;
+  color: transparent;
+  position: relative;
+  margin-top: -34px;
+  z-index: -1;
+}
+
+.containerTable {
+  width: 294px;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.containerTableOpaque {
+  height: 520px;
+}
+
+span.spanTransparent {
+  float: left;
+  border: 2px dotted black;
+  margin-bottom: 3px;
+  padding: 0;
+  width: 155px;
+  height: 25px;
+  text-align: left;
+  position: relative;
+  margin-top: 0;
+  color: black;
+  transition-duration: .5s;
+}
+
+.numericInput {
+  width: 50px;
+  height: 24.7px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 3.18px;
+  border: 2px dotted black;
+  text-align: center;
+  /* margin-left: 32px; */
+  z-index: 1;
+}
+
+input.numericInput:disabled {
+  background: transparent;
+  border: 2px dotted transparent;
+  margin-top: .5px;
+}
+
+#containerInputHospital input {
+  background: transparent;
+  border: 2px dotted transparent;
+  color: transparent;
+  z-index: 0;
+}
+
+#containerInputDowntime input {
+  background: transparent;
+  border: 2px dotted transparent;
+  color: transparent;
+  z-index: -1;
+}
+
+#containerInputDowntime input::placeholder {
+  transition-duration: .5s;
+  color: transparent;
+}
+
+#containerInputHospital input.numericInputTransparent, #containerInputDowntime input.numericInputTransparent {
+  width: 50px;
+  height: 24.7px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 3.18px;
+  border: 2px dotted black;
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+#containerInputHospital input.numericInputTransparent::placeholder,
+#containerInputDowntime input.numericInputTransparent::placeholder {
+  color: rgb(59, 59, 59);
+}
+
+.containerHospital {
+  margin-top: -96px;
+}
+
+.containerDowntime {
+  margin-top: -64px;
+}
+
+.radio {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.marginTopSpan {
+  margin-top: 95px;
+}
+
+.marginBottomInput {
+  margin-bottom: 98px;
+}
+
+input:disabled {
+  background-color: rgb(255, 255, 255);
+}
+
+.containerLabel {
+  width: 130px;
+  height: 82px;
+  position: absolute;
+}
+
+button[type="button"], button[name="result"] {
+  width: 128px;
+  height: 26.5px;
+  margin: 0 auto;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 15px;
+  display: block;
+}
+button[name="result"] {
+  float: none;
+  margin: 0 auto;
+}
+.leftColumn {
+  display: inline-block;
+  width: 130px;
+}
+.rightColumn {
+  display: inline-block;
+  width: 55px;
+  position: relative;
+  margin-left: 31px;
+}
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
 }
 
-.card {
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid #eee;
-    box-shadow: 2px 2px 7px rgb(0 0 0 / 30%);
-    margin-bottom: 1rem;
+.containerHeight_400 {
+  height: 400px;
 }
 
-.card-title {
-    font-size: 1.2rem;
-    text-transform: capitalize;
+.containerHeight_306 {
+  height: 306px;
+}
+
+.end {
+  width: 177px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input.placeholderColor::placeholder {
+  color: #9999ff;
+}
+input.placeholderBlack::placeholder {
+  color: black;
 }
