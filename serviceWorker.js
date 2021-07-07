@@ -1,7 +1,7 @@
 //cache name
 const CACHE_NAME = "mullinstack.com-v2";
 //we want to cache the next files
-const cacheAssets = ["index.html", "script.js", "index.js"];
+const cacheAssets = ["index.html", "script.js", "index.js", "main.js"];
 //Install event
 self.addEventListener("install", e => {
   console.log("Service Worker Installed");
