@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,3 +20,132 @@
 <script src="js/app.js"></script>
 </body>
 </html>
+=======
+<html lang="en" dir="ltr">
+  <head>
+<!--     <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Зарплата</title>
+<!--     <link rel="stylesheet" href="index.css"> -->
+<!--     <link rel="manifest" href="manifest.json"> -->
+    <!-- <link rel="shortcut icon" href="icon/money.png" type="image/x-icon"> -->
+  </head>
+  <body>
+    <h1>Расчёт заработной платы</h1>
+    <div class="container">
+      <div class="leftColumn">
+        <button type="button" name="button">Должность</button>
+        <div class="containerLabel">
+          <label for="radio1">Слесарь</label>
+          <input type="radio" id="radio1" class="radio" name="radio"/>
+          <label for="radio2">Сварщик</label>
+          <input type="radio" id="radio2" class="radio" name="radio"/>
+          <label for="radio3">Электрик</label>
+          <input type="radio" id="radio3" class="radio" name="radio"/>
+          <label for="radio4">Мастер</label>
+          <input type="radio" id="radio4" class="radio" name="radio"/>
+        </div>
+        <span>Тариф:</span>
+        <span>Количество смен:</span>
+        <span>Переработка:</span>
+        <span>Праздничные:</span>
+        <span>Премия:</span>
+        <span>Пожертвование:</span>
+        <span>Аванс:</span>
+        <button type="button" name="button">Больничные</button>
+        <span>Доход за 2 года:</span>
+        <span>Стаж:</span>
+        <span>Количество дней:</span>
+        <button type="button" name="button">Простой</button>
+        <span>Доход за 1 года:</span>
+        <span>Количество дней:</span>
+      </div><!--
+     --><div class="rightColumn">
+        <input type="number" min="0" class="numericInput" disabled/>  <!-- Должность -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Тариф -->
+        <input type="number" min="0" class="numericInput" placeholder="кл-во"/>  <!-- Смены -->
+        <input type="number" min="0" class="numericInput" placeholder="час."/>  <!-- Переработка -->
+        <input type="number" min="0" class="numericInput" placeholder="час."/>  <!-- Праздничные -->
+        <input type="number" min="0" class="numericInput" placeholder="%"/>  <!-- Премия -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Пожертвование -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Аванс -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Больничные -->
+        <div class="containerHospital" id="containerInputHospital">
+          <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Среднедневной -->
+          <input type="number" min="0" class="numericInput" placeholder="лет"/>  <!-- Стаж -->
+          <input type="number" min="0" class="numericInput" placeholder="кл-во"/>  <!-- Дни -->
+        </div>
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Простой -->
+        <div class="containerDowntime" id="containerInputDowntime">
+          <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Заработок за год -->
+          <input type="number" min="0" class="numericInput" placeholder="кл-во"/>  <!-- Дни -->
+        </div>
+      </div>
+    </div>
+    <div class="end">Долг предприятия на конец: --</div>
+    <button type="button" name="result">Расчитать</button>
+    <div class="containerTable">
+      <table>
+        <caption>Расчётный листок</caption>
+        <tbody>
+          <tr>
+            <th>Вид</th>
+            <th>Сумма</th>
+          </tr>
+          <tr>
+            <td>Часы:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Оплата по часовому тарифу:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Доплата за ночное время:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Надбавка за вредные условия:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Доплата за переработки:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Доплата за празднчные часы:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Оклад:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Премия:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Районный коэффициент:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Начислено:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>НДФЛ:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Оплата по среднему заработку:</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
+>>>>>>> d5104c8dce3d8de0f3595323c2b1804e0970be6f
