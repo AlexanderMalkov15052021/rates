@@ -1,5 +1,4 @@
 //cache name
-debugger;
 const CACHE_NAME = "mullinstack.com-v2";
 //we want to cache the next files
 const cacheAssets = ["index.html", "script.js", "index.js"];
