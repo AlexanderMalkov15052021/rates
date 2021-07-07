@@ -5,102 +5,124 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Salary calculation</title>
+    <title>Зарплата</title>
     <link rel="stylesheet" href="index.css">
     <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="image/salaryCalculation-64x64.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="icon/money.png" type="image/x-icon"> -->
   </head>
-  <body class="preload">
-    <div class="wrapper">
-      <h1>Расчёт заработной платы</h1>
-      <div id="container">
-        <div id="itemsNameContainer">
-          <div class="itemName">Тариф</div>
-          <div class="itemName">Количество смен</div>
-          <div class="itemName">Переработка</div>
-          <div class="itemName">Праздничные</div>
-          <div class="itemName">Премия</div>
-          <div class="itemName">Пожертвование</div>
-          <div class="itemName">Аванс</div>
-          <button class="menuButton itemName">Больничные<div class="arrow"></div></button>
-          <button class="menuButton itemName">Простой<div class="arrow"></div></button>
+  <body>
+    <h1>Расчёт заработной платы</h1>
+    <div class="container">
+      <div class="leftColumn">
+        <button type="button" name="button">Должность</button>
+        <div class="containerLabel">
+          <label for="radio1">Слесарь</label>
+          <input type="radio" id="radio1" class="radio" name="radio"/>
+          <label for="radio2">Сварщик</label>
+          <input type="radio" id="radio2" class="radio" name="radio"/>
+          <label for="radio3">Электрик</label>
+          <input type="radio" id="radio3" class="radio" name="radio"/>
+          <label for="radio4">Мастер</label>
+          <input type="radio" id="radio4" class="radio" name="radio"/>
         </div>
-        <div id="inputsContainer">
-          <input type="number" placeholder="руб." min="0" />
-          <input type="number" placeholder="кл-во." min="0" />
-          <input type="number" placeholder="ч." min="0" />
-          <input type="number" placeholder="ч." min="0" />
-          <input type="number" placeholder="%" min="0" />
-          <input type="number" placeholder="руб." min="0" />
-          <input type="number" placeholder="руб." min="0" />
-          <input type="number" placeholder="руб." min="0" />
-          <input type="number" placeholder="руб." min="0" />
+        <span>Тариф:</span>
+        <span>Количество смен:</span>
+        <span>Переработка:</span>
+        <span>Праздничные:</span>
+        <span>Премия:</span>
+        <span>Пожертвование:</span>
+        <span>Аванс:</span>
+        <button type="button" name="button">Больничные</button>
+        <span>Доход за 2 года:</span>
+        <span>Стаж:</span>
+        <span>Количество дней:</span>
+        <button type="button" name="button">Простой</button>
+        <span>Доход за 1 года:</span>
+        <span>Количество дней:</span>
+      </div><!--
+     --><div class="rightColumn">
+        <input type="number" min="0" class="numericInput" disabled/>  <!-- Должность -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Тариф -->
+        <input type="number" min="0" class="numericInput" placeholder="кл-во"/>  <!-- Смены -->
+        <input type="number" min="0" class="numericInput" placeholder="час."/>  <!-- Переработка -->
+        <input type="number" min="0" class="numericInput" placeholder="час."/>  <!-- Праздничные -->
+        <input type="number" min="0" class="numericInput" placeholder="%"/>  <!-- Премия -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Пожертвование -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Аванс -->
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Больничные -->
+        <div class="containerHospital" id="containerInputHospital">
+          <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Среднедневной -->
+          <input type="number" min="0" class="numericInput" placeholder="лет"/>  <!-- Стаж -->
+          <input type="number" min="0" class="numericInput" placeholder="кл-во"/>  <!-- Дни -->
         </div>
-      </div>
-      <div id="result">Долг предприятия на конец: —</div>
-      <button id="resultBtn">Расчитать</button>
-      <div class="containerTable">
-        <table>
-          <caption>Расчётный листок</caption>
-          <tbody>
-            <tr>
-              <th>Вид</th>
-              <th>Сумма</th>
-            </tr>
-            <tr>
-              <td>Часы:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Оплата по часовому тарифу:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Доплата за ночное время:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Надбавка за вредные условия:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Доплата за переработки:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Доплата за празднчные часы:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Больничные:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Премия:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Районный коэффициент:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Начислено:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Простой:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>НДФЛ:</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Простой -->
+        <div class="containerDowntime" id="containerInputDowntime">
+          <input type="number" min="0" class="numericInput" placeholder="руб."/>  <!-- Заработок за год -->
+          <input type="number" min="0" class="numericInput" placeholder="кл-во"/>  <!-- Дни -->
+        </div>
       </div>
     </div>
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <div class="end">Долг предприятия на конец: --</div>
+    <button type="button" name="result">Расчитать</button>
+    <div class="containerTable">
+      <table>
+        <caption>Расчётный листок</caption>
+        <tbody>
+          <tr>
+            <th>Вид</th>
+            <th>Сумма</th>
+          </tr>
+          <tr>
+            <td>Часы:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Оплата по часовому тарифу:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Доплата за ночное время:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Надбавка за вредные условия:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Доплата за переработки:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Доплата за празднчные часы:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Оклад:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Премия:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Районный коэффициент:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Начислено:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>НДФЛ:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Оплата по среднему заработку:</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

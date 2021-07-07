@@ -1,36 +1,32 @@
-input {
-  width: 100%;
-  height: 30px;
-  padding: 5px;
-  border: 1px dashed black;
-  outline: none;
-  box-sizing: border-box;
-  display: block;
-}
-
-input:not(.nameHiddenItem) {
-  position: relative;
-  z-index: 1;
-}
-
-button {
-  width: 100%;
-  cursor: pointer;
-  background-color: #cccccc;
-}
-
-h1 {
-  font-size: 20px;
+body {
   text-align: center;
 }
+h1 {
+  font-size: 16px;
+}
+span {
+  float: left;
+  border: 2px dotted black;
+  margin-bottom: 3px;
+  padding: 0;
+  width: 155px;
+  height: 25px;
+  text-align: left;
+  position: relative;
+}
 
-
+label {
+  float: left;
+  width: 75px;
+  height: 20px;
+  text-align: left;
+  margin-left: 15px;
+  opacity: 0;
+}
 
 table {
-  width: 100%;
   height: auto;
   margin: 0 auto;
-  border-collapse: collapse;
 }
 
 caption {
@@ -43,132 +39,187 @@ tr {
 }
 
 td {
-  width: 220px;
-  height: 30px;
-  border: 1px dashed black;
-  box-sizing: border-box;
-  background-color: #eeeeee;
+  width: auto;
+  height: 20px;
+  border: 2px dotted black;
 }
 
 th {
-  height: 30px;
-  width: 220px;
   border: 1px solid black;
   text-align: center;
-  box-sizing: border-box;
-  background-color: #eeeeee;
 }
 
-th:last-child {
-  height: 30px;
-  width: 80px;
-  background-color: white;
-}
-
-td:nth-child(even) {
-  width: 80px;
-  text-align: center;
-  background-color: white;
-}
-
-
-
-
-#container {
-  display: grid;
-  grid-template-columns: 220px 80px;
-  grid-template-areas: "itemNameContainer inputsContainer"
-                       "result result"
-                       "resultBtn resultBtn";
-}
-
-#result {
-  height: 30px;
-  padding-top: 4px;
-  box-sizing: border-box;
-  grid-area: result;
-  text-align: center;
-  border-left: 1px dashed black;
-  border-right: 1px dashed black;
-}
-
-#resultBtn {
-  height: 30px;
-  box-sizing: border-box;
-  grid-area: resultBtn;
-  border: 1px dashed black;
-}
-
-#itemsNameContainer {
-  grid-area: itemNameContainer;
-}
-
-#inputsContainer {
-  grid-area: inputsContainer;
-
-}
-
-.itemName {
-  height: 30px;
-  padding: 5px;
-  border: 1px dashed black;
-  background-color: #eeeeee;
-  box-sizing: border-box;
-}
-
-.menuButton {
-  background-color: white;
-  background-color: #cccccc;
+span:nth-child(11), span:nth-child(12), span:nth-child(13), span:nth-child(15), span:nth-child(16) {
+  background: transparent;
+  border: 2px dotted transparent;
+  color: transparent;
   position: relative;
-  z-index: 1;
-}
-
-.wrapper {
-  width: 300px;
-  height: 200px;
-  /* background-color: rgba(100, 0, 0, 0.5); */
-  margin: 0 auto;
-}
-
-.nameHiddenItem {
-  transition-duration: .7s;
-}
-
-.hiddenItem {
-  margin-top: -30px;
-  opacity: 0;
-}
-
-.arrow {
-  transition-duration: .7s;
-  display: inline-block;
-  pointer-events: none;
-  position: absolute;
-  background-color: transparent;
-  border: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #444444;
-  margin-top: 3px;
-  margin-left: 2px;
-}
-
-.arrowChange {
-  border: 8px solid transparent;
-  border-bottom: 10px solid #444444;
-  margin-top: -5px;
-  margin-left: 2px;
+  margin-top: -34px;
+  z-index: -1;
 }
 
 .containerTable {
+  width: 294px;
   height: 0;
+  margin: 0 auto;
   overflow: hidden;
-  transition-duration: .7s;
 }
 
 .containerTableOpaque {
-  height: 450px;
+  height: 520px;
 }
 
-.preload * {
-  transition: none !important;
+span.spanTransparent {
+  float: left;
+  border: 2px dotted black;
+  margin-bottom: 3px;
+  padding: 0;
+  width: 155px;
+  height: 25px;
+  text-align: left;
+  position: relative;
+  margin-top: 0;
+  color: black;
+  transition-duration: .5s;
+}
+
+.numericInput {
+  width: 50px;
+  height: 24.7px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 3.18px;
+  border: 2px dotted black;
+  text-align: center;
+  /* margin-left: 32px; */
+  z-index: 1;
+}
+
+input.numericInput:disabled {
+  background: transparent;
+  border: 2px dotted transparent;
+  margin-top: .5px;
+}
+
+#containerInputHospital input {
+  background: transparent;
+  border: 2px dotted transparent;
+  color: transparent;
+  z-index: 0;
+}
+
+#containerInputDowntime input {
+  background: transparent;
+  border: 2px dotted transparent;
+  color: transparent;
+  z-index: -1;
+}
+
+#containerInputDowntime input::placeholder {
+  transition-duration: .5s;
+  color: transparent;
+}
+
+#containerInputHospital input.numericInputTransparent, #containerInputDowntime input.numericInputTransparent {
+  width: 50px;
+  height: 24.7px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 3.18px;
+  border: 2px dotted black;
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+#containerInputHospital input.numericInputTransparent::placeholder,
+#containerInputDowntime input.numericInputTransparent::placeholder {
+  color: rgb(59, 59, 59);
+}
+
+.containerHospital {
+  margin-top: -96px;
+}
+
+.containerDowntime {
+  margin-top: -64px;
+}
+
+.radio {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.marginTopSpan {
+  margin-top: 95px;
+}
+
+.marginBottomInput {
+  margin-bottom: 98px;
+}
+
+input:disabled {
+  background-color: rgb(255, 255, 255);
+}
+
+.containerLabel {
+  width: 130px;
+  height: 82px;
+  position: absolute;
+}
+
+button[type="button"], button[name="result"] {
+  width: 128px;
+  height: 26.5px;
+  margin: 0 auto;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 15px;
+  display: block;
+}
+button[name="result"] {
+  float: none;
+  margin: 0 auto;
+}
+.leftColumn {
+  display: inline-block;
+  width: 130px;
+}
+.rightColumn {
+  display: inline-block;
+  width: 55px;
+  position: relative;
+  margin-left: 31px;
+}
+.container {
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+}
+
+.containerHeight_400 {
+  height: 400px;
+}
+
+.containerHeight_306 {
+  height: 306px;
+}
+
+.end {
+  width: 177px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input.placeholderColor::placeholder {
+  color: #9999ff;
+}
+input.placeholderBlack::placeholder {
+  color: black;
 }
