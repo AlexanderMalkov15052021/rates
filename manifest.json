@@ -8,7 +8,7 @@
   "start_url": ".",
   "icons": [
     {
-      "src": "image/salaryCalculator-64x64.png",
+      "src": "image/salaryCalculation-64x64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
