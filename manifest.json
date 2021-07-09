@@ -1,0 +1,31 @@
+{
+  "name": "Salary calculation",
+  "short_name": "SC",
+  "theme_color": "#911e42",
+  "background_color": "#ffa000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "image/salaryCalculation-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
