@@ -18,21 +18,21 @@
       "sizes": "144x144"
     },
     {
-			"src": "images/salaryCalculation-64x64.png",
+      "src": "images/salaryCalculation-64x64.png",
 			"sizes": "64x64",
 			"type": "image/png"
-		},
-		{
-			"src": "images/salaryCalculation-64x64.png",
+    },
+    {
+      "src": "images/salaryCalculation-64x64.png",
       "type": "image/png",
       "sizes": "64x64"
-		},
-		{
-			"src": "images/salaryCalculation-128x128.png",
+    },
+    {
+      "src": "images/salaryCalculation-128x128.png",
       "type": "image/png",
       "sizes": "128x128",
 			"density": 2
-		}
+    }
   ],
   "start_url": "index.html",
   "background_color": "#3367D6",
