@@ -118,6 +118,9 @@ button[2].addEventListener("click", getResult);
 
 
 
+//
+//
+
 
 // Initialize deferredPrompt for use later to show browser install prompt.
 let deferredPrompt;
