@@ -56,3 +56,21 @@ const toggleHiddenItem = (eventTarget) => {
 container.addEventListener("click", toggleHiddenItem);
 
 document.querySelector(".preload").classList.remove("preload");
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  
+
+  console.log(`'beforeinstallprompt' event was fired.`);
+});
+
+buttonInstall.addEventListener('click', async () => {
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  console.log(`User response to the install prompt: ${outcome}`);
+  deferredPrompt = null;
+});
