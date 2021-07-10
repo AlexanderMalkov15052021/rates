@@ -1,6 +1,6 @@
 {
-  "short_name": "App",
-  "name": "Application",
+  "short_name": "SC",
+  "name": "Salary calculation",
   "icons": [
     {
       "src": "images/icons-192.png",
@@ -40,21 +40,21 @@
   "theme_color": "#3367D6",
   "shortcuts": [
     {
-      "name": "How's weather today?",
+      "name": "Расчёт зарплаты",
       "short_name": "Today",
       "description": "View weather information for today",
       "url": "/today?source=pwa",
       "icons": [{ "src": "images/today.png", "sizes": "192x192" }]
     },
     {
-      "name": "How's weather tomorrow?",
+      "name": "Расчёт зарплаты",
       "short_name": "Tomorrow",
       "description": "View weather information for tomorrow",
       "url": "/tomorrow?source=pwa",
       "icons": [{ "src": "images/tomorrow.png", "sizes": "192x192" }]
     }
   ],
-  "description": "Weather forecast information",
+  "description": "Калькулятор для расчёта зарплаты",
   "screenshots": [
     {
       "src": "images/screenshot1.png",
