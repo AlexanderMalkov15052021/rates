@@ -4,11 +4,6 @@
   "name": "Salary calculation",
   "icons": [
     {
-      "src": "/image/salaryCalculation-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
       "src": "image/salaryCalculation-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
