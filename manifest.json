@@ -24,13 +24,13 @@
 		},
 		{
 			"src": "images/salaryCalculation-64x64.png",
-			"sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "64x64"
 		},
 		{
 			"src": "images/salaryCalculation-128x128.png",
-			"sizes": "128x128",
       "type": "image/png",
+      "sizes": "128x128",
 			"density": 2
 		}
   ],
