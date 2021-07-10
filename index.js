@@ -63,7 +63,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
 
-  
+  calculatorTitle.insertAdjacentHTML("afterEnd", `<button class="appDownload">Установить приложение</button>`);
 
   console.log(`'beforeinstallprompt' event was fired.`);
 });
