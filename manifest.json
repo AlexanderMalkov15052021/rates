@@ -1,6 +1,7 @@
 {
-  "short_name": "Weather",
-  "name": "Weather: Do I need an umbrella?",
+  "short_name": "SC",
+  "orientation": "portrait",
+  "name": "Salary calculation",
   "icons": [
     {
       "src": "/image/salaryCalculation-192x192.png",
@@ -11,40 +12,55 @@
       "src": "image/salaryCalculation-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     }
   ],
-  "start_url": "/?source=pwa",
-  "background_color": "#3367D6",
+  "start_url": "/index.html",
+  "background_color": "#ffa000",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6",
+  "theme_color": "#911e42",
   "shortcuts": [
     {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+      "name": "Today?",
+      "short_name": "TY",
+      "description": "For today",
+      "url": "/index.html",
+      "icons": [{ "src": "/image/salaryCalculation-192x192.png", "sizes": "192x192" }]
     },
     {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+      "name": "Tomorrow?",
+      "short_name": "TW",
+      "description": "For tomorrow",
+      "url": "/index.html",
+      "icons": [{ "src": "/image/salaryCalculation-192x192.png", "sizes": "192x192" }]
     }
   ],
-  "description": "Weather forecast information",
+  "description": "Information",
   "screenshots": [
     {
-      "src": "/images/screenshot1.png",
-      "type": "image/png",
-      "sizes": "540x720"
+      "src": "image/salaryCalculation-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     },
     {
-      "src": "/images/screenshot2.jpg",
-      "type": "image/jpg",
-      "sizes": "540x720"
+      "src": "image/salaryCalculation-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     }
   ]
 }
