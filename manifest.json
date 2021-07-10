@@ -22,7 +22,7 @@
   "background_color": "#3367D6",
   "display": "standalone",
   "prefer_related_applications": false,
-  "scope": ".",
+  "scope": "https://alexandermalkov15052021.github.io/",
   "theme_color": "#3367D6",
   "shortcuts": [
     {
