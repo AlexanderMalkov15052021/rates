@@ -68,9 +68,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   console.log(`'beforeinstallprompt' event was fired.`);
 });
 
-buttonInstall.addEventListener('click', async () => {
-  deferredPrompt.prompt();
-  const { outcome } = await deferredPrompt.userChoice;
-  console.log(`User response to the install prompt: ${outcome}`);
-  deferredPrompt = null;
-});
+if (document.getElementsByClassName('appDownload')[0] == true) {
+  document.getElementsByClassName('appDownload')[0].addEventListener('click', async () => {
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`User response to the install prompt: ${outcome}`);
+    deferredPrompt = null;
+  });
+}
