@@ -3,14 +3,14 @@
   "name": "Weather: Do I need an umbrella?",
   "icons": [
     {
-      "src": "/images/icons-192.png",
+      "src": "/image/salaryCalculation-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "image/salaryCalculation-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": "/?source=pwa",
