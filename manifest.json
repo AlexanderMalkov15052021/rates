@@ -30,8 +30,7 @@
     {
       "src": "images/salaryCalculation-128x128.png",
       "type": "image/png",
-      "sizes": "128x128",
-      "density": 2
+      "sizes": "128x128"
     }
   ],
   "start_url": "index.html",
