@@ -118,8 +118,6 @@ button[2].addEventListener("click", getResult);
 
 
 
-// Delete coments
-//
 
 // Initialize deferredPrompt for use later to show browser install prompt.
 let deferredPrompt;
