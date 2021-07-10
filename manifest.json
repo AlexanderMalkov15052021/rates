@@ -44,14 +44,14 @@
       "name": "Расчёт зарплаты",
       "short_name": "Today",
       "description": "View weather information for today",
-      "url": "/today?source=pwa",
+      "url": "index.html",
       "icons": [{ "src": "images/today.png", "sizes": "192x192" }]
     },
     {
       "name": "Расчёт зарплаты",
       "short_name": "Tomorrow",
       "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
+      "url": "index.html",
       "icons": [{ "src": "images/tomorrow.png", "sizes": "192x192" }]
     }
   ],
