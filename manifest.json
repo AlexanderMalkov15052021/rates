@@ -1,12 +1,18 @@
 {
-  "name": "Salary calculation",
   "short_name": "SC",
-  "theme_color": "#911e42",
-  "background_color": "#ffa000",
-  "display": "standalone",
   "orientation": "portrait",
-  "start_url": ".",
+  "name": "Salary calculation",
   "icons": [
+    {
+      "src": "/image/salaryCalculation-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "image/salaryCalculation-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
     {
       "src": "image/salaryCalculation-64x64.png",
       "sizes": "64x64",
@@ -22,9 +28,38 @@
       "sizes": "256x256",
       "type": "image/png"
     },
+  ],
+  "start_url": "/index.html",
+  "background_color": "#ffa000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#911e42",
+  "shortcuts": [
     {
-      "src": "image/salaryCalculation-512x512.png",
-      "sizes": "512x512",
+      "name": "Today?",
+      "short_name": "TY",
+      "description": "For today",
+      "url": "/index.html",
+      "icons": [{ "src": "/image/salaryCalculation-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tomorrow?",
+      "short_name": "TW",
+      "description": "For tomorrow",
+      "url": "/index.html",
+      "icons": [{ "src": "/image/salaryCalculation-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Information",
+  "screenshots": [
+    {
+      "src": "image/salaryCalculation-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "image/salaryCalculation-256x256.png",
+      "sizes": "256x256",
       "type": "image/png"
     }
   ]
