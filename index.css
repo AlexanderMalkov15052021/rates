@@ -13,7 +13,7 @@ input:not(.nameHiddenItem) {
   z-index: 1;
 }
 
-button {
+button, .appDownload {
   width: 100%;
   cursor: pointer;
   background-color: #cccccc;
@@ -108,7 +108,7 @@ td:nth-child(even) {
 
 }
 
-.itemName {
+.itemName, .appDownload {
   height: 30px;
   padding: 5px;
   border: 1px dashed black;
