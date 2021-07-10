@@ -20,15 +20,17 @@
     {
 			"src": "images/salaryCalculation-64x64.png",
 			"sizes": "64x64",
-			"type": "image/webp"
+			"type": "image/png"
 		},
 		{
 			"src": "images/salaryCalculation-64x64.png",
-			"sizes": "64x64"
+			"sizes": "64x64",
+      "type": "image/png"
 		},
 		{
 			"src": "images/salaryCalculation-128x128.png",
 			"sizes": "128x128",
+      "type": "image/png",
 			"density": 2
 		}
   ],
