@@ -56,23 +56,3 @@ const toggleHiddenItem = (eventTarget) => {
 container.addEventListener("click", toggleHiddenItem);
 
 document.querySelector(".preload").classList.remove("preload");
-
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-
-  calculatorTitle.insertAdjacentHTML("afterEnd", `<button class="appDownload">Установить приложение</button>`);
-
-  console.log(`'beforeinstallprompt' event was fired.`);
-});
-
-if (document.getElementsByClassName('appDownload')[0] == true) {
-  document.getElementsByClassName('appDownload')[0].addEventListener('click', async () => {
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    console.log(`User response to the install prompt: ${outcome}`);
-    deferredPrompt = null;
-  });
-}
