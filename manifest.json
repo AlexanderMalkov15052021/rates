@@ -3,7 +3,7 @@
   "name": "Salary calculation",
   "icons": [
     {
-      "src": "images/icons-192.png",
+      "src": "images/salaryCalculation-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -42,17 +42,17 @@
   "shortcuts": [
     {
       "name": "Расчёт зарплаты",
-      "short_name": "Today",
-      "description": "View weather information for today",
+      "short_name": "Калькулятор",
+      "description": "Калькулятор считает зарплату",
       "url": "index.html",
-      "icons": [{ "src": "images/today.png", "sizes": "192x192" }]
+      "icons": [{ "src": "images/salaryCalculation-192x192.png", "sizes": "192x192" }]
     },
     {
       "name": "Расчёт зарплаты",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
+      "short_name": "Калькулятор",
+      "description": "Калькулятор считает зарплату",
       "url": "index.html",
-      "icons": [{ "src": "images/tomorrow.png", "sizes": "192x192" }]
+      "icons": [{ "src": "images/salaryCalculation-192x192.png", "sizes": "192x192" }]
     }
   ],
   "description": "Калькулятор для расчёта зарплаты",
