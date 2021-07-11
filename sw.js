@@ -10,6 +10,7 @@ const assetUrls = [
   'js/script.js',
   'offline.html',
   'images/salaryCalculation-64x64.png',
+  'images/salaryCalculation-192x192.png',
   'images/salaryCalculation.png'
 ]
 

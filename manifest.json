@@ -1,6 +1,6 @@
 {
-  "short_name": "SC",
-  "name": "Salary calculation",
+  "short_name": "Калькулятор",
+  "name": "Расчёт зарплаты",
   "icons": [
     {
       "src": "images/salaryCalculation-192x192.png",
