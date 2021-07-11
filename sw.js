@@ -1,15 +1,16 @@
-const staticCacheName = 's-app-v2'
-const dynamicCacheName = 'd-app-v2'
+const staticCacheName = 's-app-v1'
+const dynamicCacheName = 'd-app-v1'
 
 const assetUrls = [
   'index.html',
-  'offline.html',
-  'js/app.js',
-  'js/script.js',
+  'css/index.css',
   'js/index.js',
   'js/downloadLabel.js',
-  'css/index.css',
-  'manifest.json'
+  'js/app.js',
+  'js/script.js',
+  'offline.html',
+  'images/salaryCalculation-64x64.png',
+  'images/salaryCalculation.png'
 ]
 
 self.addEventListener('install', async event => {

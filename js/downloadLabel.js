@@ -6,7 +6,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   resultBtn.insertAdjacentHTML(
     "afterEnd", `<button class="appDownload">
       <span>Установить приложение</span>
-      <img src="images/salaryCalculation-64x64.png" alt="Установить приложение" />
+      <img src="images/salaryCalculation-64x64.png" alt="калькулятор" />
     </button>`
   );
   resultBtn.nextSibling.addEventListener('click', appSet);
