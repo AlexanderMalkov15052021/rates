@@ -171,7 +171,7 @@ td:nth-child(even) {
   height: 0;
   overflow: hidden;
   transition-duration: .7s;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .containerTableOpaque {
