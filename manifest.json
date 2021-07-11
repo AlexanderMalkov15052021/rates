@@ -58,12 +58,12 @@
   "description": "Калькулятор для расчёта зарплаты",
   "screenshots": [
     {
-      "src": "images/screenshot1.png",
+      "src": "images/salaryCalculation-540x720.png",
       "type": "image/png",
       "sizes": "540x720"
     },
     {
-      "src": "images/screenshot2.jpg",
+      "src": "images/salaryCalculation-540x720..jpg",
       "type": "image/jpg",
       "sizes": "540x720"
     }
