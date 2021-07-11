@@ -63,7 +63,7 @@ const getCalculation = (calculationResult) => {
     return "Заполните обязательные поля!";
   }
   else {
-    return `Долг предприятия на конец: ${roundingNumber(calculationResult)}`;
+    return `К выплате: ${roundingNumber(calculationResult)}`;
   }
 };
 

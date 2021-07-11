@@ -10,8 +10,13 @@ const assetUrls = [
   'js/script.js',
   'offline.html',
   'images/salaryCalculation-64x64.png',
+  'images/salaryCalculation-128x128.png',
+  'images/salaryCalculation-144x144.png',
   'images/salaryCalculation-192x192.png',
-  'images/salaryCalculation.png'
+  'images/salaryCalculation-256x256.png',
+  'images/salaryCalculation-512x512.png',
+  'images/salaryCalculation-540x720.jpg',
+  'images/salaryCalculation-540x720.png'
 ]
 
 self.addEventListener('install', async event => {

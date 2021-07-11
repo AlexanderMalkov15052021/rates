@@ -24,8 +24,6 @@ h1 {
   text-align: center;
 }
 
-
-
 table {
   width: 100%;
   height: auto;
@@ -73,8 +71,6 @@ td:nth-child(even) {
 
 #calculatorWrapper {
   width: 300px;
-  height: 200px;
-  /* background-color: rgba(100, 0, 0, 0.5); */
   margin: 0 auto;
 }
 
@@ -119,7 +115,7 @@ td:nth-child(even) {
 
 .appDownload img {
   width: 28px;
-  padding-left: 5px; 
+  padding-left: 5px;
 }
 
 .appDownload span {
@@ -175,6 +171,7 @@ td:nth-child(even) {
   height: 0;
   overflow: hidden;
   transition-duration: .7s;
+  margin-bottom: 100px;
 }
 
 .containerTableOpaque {
