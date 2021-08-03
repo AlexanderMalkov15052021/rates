@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test CORS</title>
+</head>
+<body>
+	<div style="width: 100px; margin: 0 auto;">
+  	<button id="button" type="button" name="button">send</button>
+	</div>
+  <script type="text/javascript">
+
+	const hellow = "Alexander";
+
+    const sendMessageGet = () => {
+      const request = new XMLHttpRequest();
+      request.open('GET',
+			// 'http://158.46.13.26:10200/message?message=Hellow&colorR=255&colorG=0&colorB=0&brightness=1&textBorder=-50&speedLineMovement=150',
+      // 'https://alexandermalkov15052021.github.io/salaryCalculation/index.html?asd=123',
+			// 'http://158.46.13.26:10200/message?message=1',
+			'http://158.46.13.26:10200/message?message=Alexander&colorR=0&colorG=0&colorB=50&brightness=.5&textBorder=-50&speedLineMovement=150',
+      false);
+
+			// request.withCredentials = true;
+
+			request.onload = function() {
+				alert("ok");
+			}
+
+			request.onerror = function() {
+				alert("no");
+			}
+
+      request.send();
+    }
+
+
+/*
+		var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+
+		var xhr = new XHR();
+		xhr.open('GET', urlindef, true);
+		xhr.withCredentials = true;
+		xhr.onload = function() {
+		  alert( this.responseText );
+		}
+		xhr.onerror = function() {
+		  alert( 'Ошибка ' + this.status );
+		}
+		xhr.send();
+*/
+
+
+
+		/*< ifmodule mod_headers.c >
+		    Header always set Access-Control-Allow-Origin: "*"
+		    Header always set Access-Control-Allow-Methods "POST, GET, PUT, DELETE, OPTIONS"
+		    Header always set Access-Control-Allow-Headers "X-Requested-With, content-type"
+		< /ifmodule >
+
+		Header add Access-Control-Allow-Origin "*"
+		Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+		Header add Access-Control-Allow-Headers: Content-Type
+
+		AllowOverride All
+		*/
+
+// http://158.46.13.26:10200/index.html?messag=Hellow&colorR=255&colorG=0&colorB=0&brightness=1&textBorder=-50&speedLineMovement=150
+		button.addEventListener("click", sendMessageGet)
+  </script>
+</body>
+</html>
