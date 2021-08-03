@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Бегущая строка</title>
+	<!-- <script src="brain.js"></script> -->
+	<link rel="stylesheet" href="style.css">
+	<script defer src="script.js"></script>
+</head>
+<body>
+	<div id="radioWrapper">
+		<div class="bgColor">
+			<input type="radio" name="radio" data-color="0" value="255,0,0" class="colorSelect" />  <!-- red -->
+		</div>
+		<div class="bgColor">
+			<input type="radio" name="radio" data-color="60" value="0,100,100" class="colorSelect" />  <!-- yellow -->
+		</div>
+		<div class="bgColor">
+			<input type="radio" name="radio" data-color="121" value="0,255,0" class="colorSelect" />  <!-- green -->
+		</div>
+		<div class="bgColor">
+			<input type="radio" name="radio" data-color="180" value="100,100,0" class="colorSelect" />  <!-- cyan -->
+		</div>
+		<div class="bgColor">
+			<input type="radio" name="radio" data-color="240" value="0,0,255" class="colorSelect" />  <!-- blue -->
+		</div>
+		<div class="bgColor">
+			<input type="text" name="textColor" data-color="300" value="255,0,255" class="colorSelect" />  <!-- magenta -->
+		</div>
+		<div class="bgColor">
+			<input type="text" name="text" value=".5" placeholder="Яркость" class="brightnessSelect" />
+			<div class="rangeValue">50%</div>
+		</div>
+		<div class="bgColor">
+			<input type="text" name="text" value="Привет, мир!!!" placeholder="Текст сообщения" class="text" />
+		</div>
+		<div class="bgColor">
+			<input type="text" name="text" value="84" placeholder="Граница текста" class="text" />
+		</div>
+		<div class="bgColor">
+			<input type="text" name="text" value="100" placeholder="Скорость движения строки" class="text" />
+		</div>
+	</div>
+	<div id="buttonWrapper">
+		<button id="send">Отправить</button>
+		<button id="restart">Перезагрузить</button>
+	</div>
+</body>
+</html>
