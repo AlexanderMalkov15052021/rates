@@ -17,6 +17,7 @@ async function loadPosts(e) {
   // const res = await fetch('json.js');
   const data = await res.json()
 console.log(e);
+console.log(data);
   const container = document.querySelector('#posts')
   // console.log(data.Valute);
 
