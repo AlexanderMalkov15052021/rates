@@ -1,11 +1,22 @@
-const staticCacheName = 's-app-v3'
-const dynamicCacheName = 'd-app-v3'
+const staticCacheName = 's-app-v1'
+const dynamicCacheName = 'd-app-v1'
 
 const assetUrls = [
   'index.html',
-  '/js/app.js',
-  '/css/styles.css',
-  'offline.html'
+  'css/index.css',
+  'js/index.js',
+  'js/downloadLabel.js',
+  'js/app.js',
+  'js/script.js',
+  'offline.html',
+  'images/salaryCalculation-64x64.png',
+  'images/salaryCalculation-128x128.png',
+  'images/salaryCalculation-144x144.png',
+  'images/salaryCalculation-192x192.png',
+  'images/salaryCalculation-256x256.png',
+  'images/salaryCalculation-512x512.png',
+  'images/salaryCalculation-540x720.jpg',
+  'images/salaryCalculation-540x720.png'
 ]
 
 self.addEventListener('install', async event => {
@@ -48,6 +59,6 @@ async function networkFirst(request) {
     return response
   } catch (e) {
     const cached = await cache.match(request)
-    return cached ?? await caches.match('/offline.html')
+    return cached ?? await caches.match('offline.html')
   }
 }
