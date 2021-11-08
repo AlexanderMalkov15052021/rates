@@ -7,7 +7,9 @@ window.addEventListener('load', async () => {
       console.log('Service worker register fail')
     }
   }
-  
+  setTimeout(() => {
+    document.querySelector(".card-title:nth-child(1)").style.color = "red";
+  }, 3000);
   await loadPosts()
 })
 
