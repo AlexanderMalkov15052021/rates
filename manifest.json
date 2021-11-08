@@ -1,71 +1,31 @@
 {
-  "short_name": "Калькулятор",
-  "name": "Расчёт зарплаты",
+  "name": "PWA Course App",
+  "short_name": "VM PWA",
+  "theme_color": "#3a1a86",
+  "background_color": "#1a4f79",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
   "icons": [
     {
-      "src": "images/salaryCalculation-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/icons/app-icon-96-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
     },
     {
-      "src": "images/salaryCalculation-192x192.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/icons/app-icon-144-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
     },
     {
-      "src": "images/salaryCalculation-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
+      "src": "/icons/app-icon-256-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     },
     {
-      "src": "images/salaryCalculation-64x64.png",
-      "type": "image/png",
-      "sizes": "64x64"
-    },
-    {
-      "src": "images/salaryCalculation-64x64.png",
-      "type": "image/png",
-      "sizes": "64x64"
-    },
-    {
-      "src": "images/salaryCalculation-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    }
-  ],
-  "start_url": "index.html",
-  "background_color": "#3367D6",
-  "display": "standalone",
-  "prefer_related_applications": false,
-  "scope": "index.html",
-  "theme_color": "#3367D6",
-  "shortcuts": [
-    {
-      "name": "Расчёт зарплаты",
-      "short_name": "Калькулятор",
-      "description": "Калькулятор считает зарплату",
-      "url": "index.html",
-      "icons": [{ "src": "images/salaryCalculation-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Расчёт зарплаты",
-      "short_name": "Калькулятор",
-      "description": "Калькулятор считает зарплату",
-      "url": "index.html",
-      "icons": [{ "src": "images/salaryCalculation-192x192.png", "sizes": "192x192" }]
-    }
-  ],
-  "description": "Калькулятор для расчёта зарплаты",
-  "screenshots": [
-    {
-      "src": "images/salaryCalculation-540x720.png",
-      "type": "image/png",
-      "sizes": "540x720"
-    },
-    {
-      "src": "images/salaryCalculation-540x720..jpg",
-      "type": "image/jpg",
-      "sizes": "540x720"
+      "src": "/icons/app-icon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
