@@ -43,7 +43,7 @@ async function loadPosts() {
   // container.innerHTML = countries.map(toCard).join('\n')
 
 
-  // document.querySelector("header h2").innerHTML += data.Date;
+  document.querySelector("header h2").innerHTML += data.Date;
   // document.querySelector("nav h1").innerHTML = data.Date;
 }
 
