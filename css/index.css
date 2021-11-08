@@ -26,6 +26,7 @@ header {
 }
 
 h1, h2 {
+  width: 300px;
   margin: 0 auto;
 }
 
