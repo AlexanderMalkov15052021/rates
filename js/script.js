@@ -114,4 +114,4 @@ const getResult = () => {
   document.getElementsByClassName('containerTable')[0].classList.add("containerTableOpaque");
 }
 
-button[2].addEventListener("click", getResult);
+buttonArray[2].addEventListener("click", getResult);

@@ -1,4 +1,4 @@
-const button = [...document.getElementsByTagName("button")],
+const buttonArray = [...document.getElementsByTagName("button")],
       propertiesHiddenObjects_1 = {
         "Количество дней": "кл-во.",
         "Стаж": "лет",
@@ -24,7 +24,7 @@ const setHiddenItem = (iterableObject, elemNumber) => {
 const getIndexItemName = (index) => {
   let indexNum = null;
   [].map.call(itemName, (obj, i) => {
-    if (obj === button[index]) {
+    if (obj === buttonArray[index]) {
       indexNum = i;
    }
   });
@@ -38,8 +38,8 @@ input = Array.from(input);
 itemName = Array.from(itemName);
 
 const getIterationEnd = (elem) => {
-  let indexNumber = itemName.indexOf(button[button.indexOf(elem) + 1]);
-  return itemName.includes(button[button.indexOf(elem) + 1]) > 0 ? indexNumber : itemName.length;
+  let indexNumber = itemName.indexOf(buttonArray[buttonArray.indexOf(elem) + 1]);
+  return itemName.includes(buttonArray[buttonArray.indexOf(elem) + 1]) > 0 ? indexNumber : itemName.length;
 }
 
 const toggleHiddenItem = (eventTarget) => {
