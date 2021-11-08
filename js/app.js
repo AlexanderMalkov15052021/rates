@@ -10,7 +10,6 @@ window.addEventListener('load', async () => {
   await loadPosts()
 })
 
-
 async function loadPosts() {
   // const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=11')
   const res = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
