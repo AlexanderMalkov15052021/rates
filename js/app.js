@@ -7,7 +7,7 @@ window.addEventListener('load', async () => {
       console.log('Service worker register fail')
     }
   }
-  setTimeout(loadPosts, 5000, "111");
+  
   await loadPosts()
 })
 
@@ -16,8 +16,7 @@ async function loadPosts(e) {
   const res = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
   // const res = await fetch('json.js');
   const data = await res.json()
-console.log(e);
-console.log(data);
+
   const container = document.querySelector('#posts')
   // console.log(data.Valute);
 
