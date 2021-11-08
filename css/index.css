@@ -12,7 +12,7 @@ body {
 nav {
   width: 100%;
   height: 30px;
-  background: #3a1a86;
+  background: #cc3333;
   color: #fff;
   box-shadow: 20px 3px 9px rgb(0 0 0 / 30%);
   text-align: center;
@@ -21,17 +21,12 @@ nav {
 header {
   width: 100%;
   height: 100px;
-  background: #5d30bf;
+  background: #ee3333;
   color: white;
   margin-bottom: 10px;
   text-align: center;
   padding: 20px;
 }
-
-/* h1, h2 {
-  width: 300px;
-  margin: 0 auto;
-} */
 
 .container {
   max-width: 800px;
