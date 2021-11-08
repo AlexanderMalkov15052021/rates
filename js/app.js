@@ -7,7 +7,7 @@ window.addEventListener('load', async () => {
       console.log('Service worker register fail')
     }
   }
-  setTimeout(loadPosts, 2000, "111");
+  setTimeout(loadPosts, 5000, "111");
   await loadPosts()
 })
 
