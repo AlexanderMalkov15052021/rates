@@ -4,10 +4,7 @@ const dynamicCacheName = 'd-app-v1'
 const assetUrls = [
   'index.html',
   'css/index.css',
-  'js/index.js',
-  'js/downloadLabel.js',
   'js/app.js',
-  'js/script.js',
   'offline.html',
   'images/salaryCalculation-64x64.png',
   'images/salaryCalculation-128x128.png',
