@@ -16,7 +16,6 @@ nav {
   color: #fff;
   box-shadow: 20px 3px 9px rgb(0 0 0 / 30%);
   text-align: center;
-  padding: 20px;
 }
 
 header {
@@ -26,6 +25,7 @@ header {
   color: white;
   margin-bottom: 10px;
   text-align: center;
+  padding: 20px;
 }
 
 /* h1, h2 {
