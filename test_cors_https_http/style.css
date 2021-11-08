@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* background-color: #FFF9D0; */
+}
+
+input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+}
+
+input[type="text"] {
+  width: 75px;
+  height: 20px;
+}
+
+input[type="range"] {
+  width: 75px;
+  height: 20px;
+}
+
+button {
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+#radioWrapper {
+  width: 100px;
+  /* height: 180px; */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#buttonWrapper {
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.rangeValue {
+  width: 75px;
+  height: 20px;
+  /* background-color: hsl(300, 100%, 50%); */
+}
+
+.controlButtons .button {
+  width: 80px;
+  height: 80px;
+  float: left;
+  background-color: #A52A2A;
+  cursor: pointer;
+}
+.controlButtons .button:hover {
+  background-color: #CC7722;
+}
+.controlButtons {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.bgColor {
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+.bgColor:nth-child(2) {
+  background-color: rgb(220,220,0);
+}
+.bgColor:nth-child(3) {
+  background-color: green;
+}
+.bgColor:nth-child(4) {
+  background-color: cyan;
+}
+.bgColor:nth-child(5) {
+  background-color: blue;
+}
+.bgColor:nth-child(6) {
+  background-color: magenta;
+  width: 79px;
+}
+.bgColor:nth-child(7) {
+  background-color: transparent;
+  width: 79px;
+}
+.bgColor:nth-child(8) {
+  background-color: transparent;
+  width: 79px;
+}
+.bgColor:nth-child(9) {
+  background-color: transparent;
+  width: 79px;
+}
+.bgColor:nth-child(10) {
+  background-color: transparent;
+  width: 79px;
+}
+@media (min-width: 500px)  {  /* для экранов больше 500px*/
+
+}
+@media (max-width: 500px)  {  /* для экранов меньше 500px*/
+
+}
