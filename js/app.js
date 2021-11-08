@@ -7,15 +7,16 @@ window.addEventListener('load', async () => {
       console.log('Service worker register fail')
     }
   }
+  setTimeout(loadPosts, 2000, "111");
   await loadPosts()
 })
 
-async function loadPosts() {
+async function loadPosts(e) {
   // const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=11')
   const res = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
   // const res = await fetch('json.js');
   const data = await res.json()
-console.log(data);
+console.log(e);
   const container = document.querySelector('#posts')
   // console.log(data.Valute);
 
