@@ -34,11 +34,11 @@
     }
   ],
   "start_url": "index.html",
-  "background_color": "#3367D6",
+  "background_color": "#aa3333",
   "display": "standalone",
   "prefer_related_applications": false,
   "scope": "index.html",
-  "theme_color": "#3367D6",
+  "theme_color": "#cc3333",
   "shortcuts": [
     {
       "name": "Расчёт зарплаты",
