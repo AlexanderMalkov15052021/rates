@@ -11,7 +11,7 @@ body {
 
 nav {
   width: 100%;
-  height: 30px;
+  padding: 5px;
   background: #aa3333;
   color: #eee;
   box-shadow: 20px 3px 9px rgb(0 0 0 / 30%);
@@ -20,7 +20,6 @@ nav {
 
 header {
   width: 100%;
-  height: 100px;
   background: #cc3333;
   color: #eee;
   margin-bottom: 10px;
@@ -31,6 +30,8 @@ header {
 footer {
   text-align: center;
 }
+
+a {}
 
 .container {
   max-width: 800px;

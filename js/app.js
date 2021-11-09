@@ -31,6 +31,7 @@ async function loadPosts(e) {
   }
 
   container.innerHTML = countriesItem.map(toCard).join('\n')
+  document.querySelector("header h2").innerHTML += data.Date;
 }
 
 function toCard(post) {
