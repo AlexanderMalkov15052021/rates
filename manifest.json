@@ -1,6 +1,6 @@
 {
-  "short_name": "Калькулятор",
-  "name": "Расчёт зарплаты",
+  "short_name": "Курс валют",
+  "name": "Курс национальных валют отнасительно рубля",
   "icons": [
     {
       "src": "images/rates_192x192.png",
@@ -42,20 +42,20 @@
   "shortcuts": [
     {
       "name": "Расчёт зарплаты",
-      "short_name": "Калькулятор",
-      "description": "Калькулятор считает зарплату",
+      "short_name": "Курс валют",
+      "description": "Курс национальных валют отнасительно рубля",
       "url": "index.html",
       "icons": [{ "src": "images/rates_192x192.png", "sizes": "192x192" }]
     },
     {
       "name": "Расчёт зарплаты",
-      "short_name": "Калькулятор",
-      "description": "Калькулятор считает зарплату",
+      "short_name": "Курс валют",
+      "description": "Курс национальных валют отнасительно рубля",
       "url": "index.html",
       "icons": [{ "src": "images/rates_192x192.png", "sizes": "192x192" }]
     }
   ],
-  "description": "Калькулятор для расчёта зарплаты",
+  "description": "Курс национальных валют отнасительно рубля",
   "screenshots": [
     {
       "src": "images/rates_540x720.png",
