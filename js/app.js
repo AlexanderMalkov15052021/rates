@@ -11,7 +11,7 @@ window.addEventListener('load', async () => {
 })
 
 async function loadPosts(e) {
-  // const res = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
+  const res = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
   const res = await fetch('json.js');
   const data = await res.json()
 
